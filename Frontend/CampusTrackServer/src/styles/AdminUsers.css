@@ -1,0 +1,103 @@
+.admin-users {
+  height: 100vh;
+  background: url("/assets/backgrounds/campus.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto; /* scrollable */
+}
+
+/* Title bar */
+.users-header {
+  background: white;
+  width: 100%;
+  max-width: 900px;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem; /* gap below title */
+}
+.users-header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+}
+.back-button {
+  background: #2196f3;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem; /* smaller */
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+.back-button:hover {
+  background: #1976d2;
+}
+
+/* Search bar aligned with title */
+.search-bar {
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 1rem; /* gap below search */
+}
+.search-wrapper {
+  position: relative;
+}
+.search-wrapper input {
+  width: 100%;
+  padding: 0.6rem 1rem 0.6rem 2.5rem; /* space for icon at start */
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+}
+.search-wrapper .search-icon {
+  position: absolute;
+  left: 0.8rem; /* ✅ icon at beginning */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Table container */
+.users-content {
+  width: 100%;
+  max-width: 900px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+th {
+  background: #f9f9f9;
+  font-weight: 600;
+  color: #2196f3; /* ✅ parameters in blue */
+}
+td {
+  color: #000; /* ✅ details in black */
+}
+tr:hover {
+  background: #f1f1f1;
+}

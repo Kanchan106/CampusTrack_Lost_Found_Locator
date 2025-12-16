@@ -1,0 +1,196 @@
+.admin-reports {
+  font-family: "Segoe UI", sans-serif;
+  background-image: url('/images/campus-bg.jpg'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 20px;
+  backdrop-filter: brightness(0.95);
+}
+
+/* Title bar */
+.reports-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 12px 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.reports-header h1 {
+  font-size: 28px;
+  color: #333;
+}
+
+.header-right {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-dropdown {
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.back-button {
+  padding: 6px 12px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Content layout */
+.reports-content {
+  overflow-y: auto;
+}
+
+.reports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+/* Report card */
+.report-card {
+  background-color: #ffffff;
+  border: 2px solid black; /* ✅ black border */
+  border-radius: 8px;
+  padding: 16px;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* ✅ Status badge styles */
+.status-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.badge-found {
+  background-color: #4caf50; /* green */
+}
+
+.badge-lost {
+  background-color: #f44336; /* red */
+}
+
+.found-card {
+  border-left: 4px solid #4caf50;
+}
+
+.approved-tick {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #4caf50;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* Image button */
+.report-image-button {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.report-image-button button {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Report details */
+.report-details p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Action buttons */
+.report-actions {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.report-actions button {
+  padding: 6px 10px;
+  font-size: 13px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-approve {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-edit {
+  background-color: #ff9800;
+  color: white;
+}
+
+.btn-delete {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Edit window */
+.edit-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  z-index: 1000;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.edit-window h2 {
+  margin-top: 0;
+}
+
+.edit-window label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.edit-window input {
+  width: 100%;
+  padding: 6px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-actions {
+  display: flex;
+  justify-content: space-between;
+}

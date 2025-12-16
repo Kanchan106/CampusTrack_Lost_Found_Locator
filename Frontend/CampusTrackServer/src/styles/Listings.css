@@ -1,0 +1,84 @@
+.listings-page {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.item-card {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background: #fff;
+}
+
+.item-card.lost {
+  border-left: 6px solid #d32f2f;
+}
+
+.item-card.found {
+  border-left: 6px solid #388e3c;
+}
+
+.item-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.status {
+  font-weight: bold;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: #d32f2f;
+}
+
+.item-card.found .status {
+  background: #388e3c;
+}
+
+.actions button {
+  margin-right: 10px;
+  padding: 8px 12px;
+  background: #0b3b8c;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.status-badge {
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+.status-badge.lost {
+  background-color: #ffe5e5;
+  color: #cc0000;
+  border: 1px solid #cc0000;
+}
+
+.status-badge.found {
+  background-color: #e5ffe5;
+  color: #007700;
+  border: 1px solid #007700;
+}

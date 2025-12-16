@@ -1,0 +1,149 @@
+/* Full-page background */
+/* Full-page layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Centered form wrapper */
+.form-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* ✅ center vertically */
+  align-items: center;     /* ✅ center horizontally */
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* Form box */
+.form-box {
+  width: 100%;
+  max-width: 720px;
+  background: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  padding: 30px 40px;
+  box-sizing: border-box;
+  margin-bottom: 24px; /* ✅ consistent gap from toggle */
+}
+
+/* Form title */
+.form-box h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #0b3b8c;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* Toggle switch at bottom */
+.toggle-switch {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: auto; /* ✅ push to bottom */
+  padding: 20px;
+}
+
+.toggle-switch button {
+  padding: 10px 16px;
+  background: #0b3b8c;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.toggle-switch button:hover {
+  background: #092d6a;
+}
+
+.toggle-switch button.active {
+  background: #388e3c;
+}
+
+/* Form box inside dashboard */
+.form-box {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  padding: 30px 40px;
+  box-sizing: border-box;
+  max-height: 70vh;          /* ✅ limit height */
+  overflow-y: auto;          /* ✅ scrollable form */
+}
+
+/* Form title */
+.form-box h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #0b3b8c;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* Horizontal field layout */
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.form-group label {
+  width: 140px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 12px;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Buttons */
+button.primary,
+.back-button {
+  width: 100%;
+  padding: 16px;             /* ✅ increased height */
+  background: #0b3b8c;
+  color: #fff;
+  font-size: 16px;           /* slightly larger text */
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.back-button {
+  background: #555;          /* optional: different color for back */
+}
